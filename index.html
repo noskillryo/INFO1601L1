@@ -25,15 +25,25 @@
            </section>
 
            <section>
-                <h3>Hobbies</h3>
-                <ul>
+               <details>
+                   <summary>Hobbies</summary>
+                   <ul>
                     <li>Football</li>
                     <li>Coding</li>
                     <li>Music</li>
                     <li>Memeing</li>
                 </ul>
+               </details>
             </section>
 
+            <dialog id="mydialog">
+                This is a dialog
+                <a href="javascript:mydialog.removeAttribute('open')">close</a>
+            </dialog>
+
+            <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
+                Open Dialog
+            </a>
 
         </article>
            
